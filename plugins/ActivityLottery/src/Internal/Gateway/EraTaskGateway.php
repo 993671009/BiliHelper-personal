@@ -40,7 +40,7 @@ final class EraTaskGateway
                 trim((string)($payload['act_name'] ?? '')),
                 trim((string)($payload['task_name'] ?? '')),
                 trim((string)($payload['reward_name'] ?? '')),
-                trim((string)($payload['address_id'] ?? '')),
+                trim((string)($payload['gaia_vtoken'] ?? '')),
             );
         };
         $this->authFailureClassifier = $authFailureClassifier ?? new AuthFailureClassifier();
